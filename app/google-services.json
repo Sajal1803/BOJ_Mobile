@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "456628363478",
+    "project_id": "boj-mobile-54b74",
+    "storage_bucket": "boj-mobile-54b74.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456628363478:android:d54425cbe82dd2ead7a977",
+        "android_client_info": {
+          "package_name": "com.project_sajal.bojmobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456628363478-v7nqpfnies41frgqld29otc4mkmkudlh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-iYWfpFkweaQIG2oAD3kW9XJH5zdOpqQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456628363478-v7nqpfnies41frgqld29otc4mkmkudlh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
