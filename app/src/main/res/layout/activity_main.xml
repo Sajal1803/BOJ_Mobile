@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/innerbackground2"
     tools:context=".MainActivity">
 
 
@@ -12,6 +12,7 @@
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/innerbackground1"
         android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,7 +23,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@drawable/innerbackground2">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/ImpHintsRecyclerview"
@@ -92,7 +94,7 @@
                 android:layout_width="80dp"
                 android:layout_height="77dp"
                 android:layout_marginTop="204dp"
-                android:background="@drawable/fundtransfer2"
+                android:background="@drawable/fundtransfer2_newbg"
                 android:contentDescription="@string/desc_button"
                 app:layout_constraintEnd_toEndOf="@+id/ImpHintsRecyclerview"
                 app:layout_constraintHorizontal_bias="0.792"
@@ -116,7 +118,7 @@
                 android:layout_width="80dp"
                 android:layout_height="77dp"
                 android:layout_marginTop="84dp"
-                android:background="@drawable/deposit"
+                android:background="@drawable/deposit_newbg"
                 android:contentDescription="@string/desc_button"
                 app:layout_constraintEnd_toEndOf="@+id/ImpHintsRecyclerview"
                 app:layout_constraintHorizontal_bias="0.038"
@@ -141,7 +143,7 @@
                 android:layout_width="80dp"
                 android:layout_height="77dp"
                 android:layout_marginTop="84dp"
-                android:background="@drawable/card1"
+                android:background="@drawable/card1_newbg"
                 android:contentDescription="@string/desc_button"
                 app:layout_constraintEnd_toEndOf="@+id/ImpHintsRecyclerview"
                 app:layout_constraintHorizontal_bias="0.269"
@@ -166,7 +168,7 @@
                 android:layout_width="80dp"
                 android:layout_height="77dp"
                 android:layout_marginTop="84dp"
-                android:background="@drawable/service1"
+                android:background="@drawable/service_new_bg"
                 android:contentDescription="@string/desc_button"
                 app:layout_constraintEnd_toEndOf="@+id/ImpHintsRecyclerview"
                 app:layout_constraintHorizontal_bias="0.795"
@@ -179,10 +181,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:text="Service Request"
-                android:textColor="#FF000000"
-                android:textSize="15sp"
+                android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@+id/Service_request"
-                app:layout_constraintHorizontal_bias="0.518"
                 app:layout_constraintStart_toStartOf="@+id/Service_request"
                 app:layout_constraintTop_toBottomOf="@+id/Service_request" />
 
@@ -216,7 +216,7 @@
                 android:layout_width="80dp"
                 android:layout_height="77dp"
                 android:layout_marginTop="88dp"
-                android:background="@drawable/offers"
+                android:background="@drawable/offers_newbg"
                 android:contentDescription="@string/desc_button"
                 app:layout_constraintEnd_toEndOf="@+id/card_service"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -241,7 +241,7 @@
                 android:layout_width="80dp"
                 android:layout_height="77dp"
                 android:layout_marginTop="88dp"
-                android:background="@drawable/feedback"
+                android:background="@drawable/feedback_newbg"
                 android:contentDescription="@string/desc_button"
                 app:layout_constraintEnd_toEndOf="@+id/Service_request"
                 app:layout_constraintHorizontal_bias="0.0"
