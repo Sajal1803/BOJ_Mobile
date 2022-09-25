@@ -3,6 +3,7 @@
     <string name="boj_mobile">BOJ Mobile</string>
     <string name="login_account">Login Account</string>
     <string name="personal_email">Personal Email</string>
+    <string name="Email">Email</string>
     <string name="login">Login</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
@@ -31,5 +32,6 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_my_passbook">MyPassbook</string>
 
 </resources>

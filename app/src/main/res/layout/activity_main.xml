@@ -36,11 +36,10 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
-
             </androidx.recyclerview.widget.RecyclerView>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button5"
+                android:id="@+id/myprofile"
                 android:layout_width="80dp"
                 android:layout_height="77dp"
                 android:layout_marginTop="204dp"
@@ -59,13 +58,13 @@
                 android:text="My Profile"
                 android:textColor="#FF000000"
                 android:textSize="14sp"
-                app:layout_constraintEnd_toEndOf="@+id/button5"
+                app:layout_constraintEnd_toEndOf="@+id/myprofile"
                 app:layout_constraintHorizontal_bias="0.452"
-                app:layout_constraintStart_toStartOf="@+id/button5"
-                app:layout_constraintTop_toBottomOf="@+id/button5" />
+                app:layout_constraintStart_toStartOf="@+id/myprofile"
+                app:layout_constraintTop_toBottomOf="@+id/myprofile" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button6"
+                android:id="@+id/mypassbook"
                 android:layout_width="80dp"
                 android:layout_height="77dp"
                 android:layout_marginTop="204dp"
@@ -73,31 +72,31 @@
                 android:contentDescription="@string/desc_button"
                 app:layout_constraintEnd_toEndOf="@+id/ImpHintsRecyclerview"
                 app:layout_constraintHorizontal_bias="0.273"
-                app:layout_constraintStart_toEndOf="@+id/button5"
+                app:layout_constraintStart_toEndOf="@+id/myprofile"
                 app:layout_constraintTop_toTopOf="@+id/ImpHintsRecyclerview" />
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="12dp"
                 android:text="MyPassbook"
                 android:textColor="#FF000000"
-                app:layout_constraintEnd_toEndOf="@+id/button6"
-                app:layout_constraintHorizontal_bias="0.363"
-                app:layout_constraintStart_toStartOf="@+id/button6"
-                app:layout_constraintTop_toBottomOf="@+id/button6" />
+                app:layout_constraintEnd_toEndOf="@+id/mypassbook"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/mypassbook"
+                app:layout_constraintTop_toBottomOf="@+id/mypassbook" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button7"
+                android:id="@+id/fundtransfer"
                 android:layout_width="80dp"
                 android:layout_height="77dp"
-                android:layout_marginTop="208dp"
+                android:layout_marginTop="204dp"
                 android:background="@drawable/fundtransfer2"
                 android:contentDescription="@string/desc_button"
                 app:layout_constraintEnd_toEndOf="@+id/ImpHintsRecyclerview"
-                app:layout_constraintHorizontal_bias="0.802"
-                app:layout_constraintStart_toEndOf="@+id/button6"
+                app:layout_constraintHorizontal_bias="0.792"
+                app:layout_constraintStart_toEndOf="@+id/mypassbook"
                 app:layout_constraintTop_toTopOf="@+id/ImpHintsRecyclerview" />
 
             <TextView
@@ -107,13 +106,13 @@
                 android:layout_marginTop="12dp"
                 android:text="Fund Transfer"
                 android:textColor="#FF000000"
-                app:layout_constraintEnd_toEndOf="@+id/button7"
-                app:layout_constraintHorizontal_bias="0.272"
-                app:layout_constraintStart_toStartOf="@+id/button7"
-                app:layout_constraintTop_toBottomOf="@+id/button7" />
+                app:layout_constraintEnd_toEndOf="@+id/fundtransfer"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/fundtransfer"
+                app:layout_constraintTop_toBottomOf="@+id/fundtransfer" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button8"
+                android:id="@+id/deposit"
                 android:layout_width="80dp"
                 android:layout_height="77dp"
                 android:layout_marginTop="84dp"
@@ -122,7 +121,7 @@
                 app:layout_constraintEnd_toEndOf="@+id/ImpHintsRecyclerview"
                 app:layout_constraintHorizontal_bias="0.038"
                 app:layout_constraintStart_toStartOf="@+id/ImpHintsRecyclerview"
-                app:layout_constraintTop_toBottomOf="@+id/button5" />
+                app:layout_constraintTop_toBottomOf="@+id/myprofile" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -132,13 +131,13 @@
                 android:text="Deposit"
                 android:textColor="#FF000000"
                 android:textSize="15sp"
-                app:layout_constraintEnd_toEndOf="@+id/button8"
+                app:layout_constraintEnd_toEndOf="@+id/deposit"
                 app:layout_constraintHorizontal_bias="0.541"
-                app:layout_constraintStart_toStartOf="@+id/button8"
-                app:layout_constraintTop_toBottomOf="@+id/button8" />
+                app:layout_constraintStart_toStartOf="@+id/deposit"
+                app:layout_constraintTop_toBottomOf="@+id/deposit" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button9"
+                android:id="@+id/card_service"
                 android:layout_width="80dp"
                 android:layout_height="77dp"
                 android:layout_marginTop="84dp"
@@ -146,8 +145,8 @@
                 android:contentDescription="@string/desc_button"
                 app:layout_constraintEnd_toEndOf="@+id/ImpHintsRecyclerview"
                 app:layout_constraintHorizontal_bias="0.269"
-                app:layout_constraintStart_toEndOf="@+id/button8"
-                app:layout_constraintTop_toBottomOf="@+id/button6" />
+                app:layout_constraintStart_toEndOf="@+id/deposit"
+                app:layout_constraintTop_toBottomOf="@+id/mypassbook" />
 
             <TextView
                 android:id="@+id/textView7"
@@ -157,22 +156,22 @@
                 android:text="Card Services"
                 android:textColor="#FF000000"
                 android:textSize="15sp"
-                app:layout_constraintEnd_toEndOf="@+id/button9"
+                app:layout_constraintEnd_toEndOf="@+id/card_service"
                 app:layout_constraintHorizontal_bias="0.541"
-                app:layout_constraintStart_toStartOf="@+id/button9"
-                app:layout_constraintTop_toBottomOf="@+id/button9" />
+                app:layout_constraintStart_toStartOf="@+id/card_service"
+                app:layout_constraintTop_toBottomOf="@+id/card_service" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button10"
+                android:id="@+id/Service_request"
                 android:layout_width="80dp"
                 android:layout_height="77dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="84dp"
                 android:background="@drawable/service1"
                 android:contentDescription="@string/desc_button"
                 app:layout_constraintEnd_toEndOf="@+id/ImpHintsRecyclerview"
-                app:layout_constraintHorizontal_bias="0.746"
-                app:layout_constraintStart_toEndOf="@+id/button9"
-                app:layout_constraintTop_toBottomOf="@+id/button7" />
+                app:layout_constraintHorizontal_bias="0.795"
+                app:layout_constraintStart_toEndOf="@+id/card_service"
+                app:layout_constraintTop_toBottomOf="@+id/fundtransfer" />
 
             <TextView
                 android:id="@+id/textView8"
@@ -182,22 +181,22 @@
                 android:text="Service Request"
                 android:textColor="#FF000000"
                 android:textSize="15sp"
-                app:layout_constraintEnd_toEndOf="@+id/button10"
+                app:layout_constraintEnd_toEndOf="@+id/Service_request"
                 app:layout_constraintHorizontal_bias="0.518"
-                app:layout_constraintStart_toStartOf="@+id/button10"
-                app:layout_constraintTop_toBottomOf="@+id/button10" />
+                app:layout_constraintStart_toStartOf="@+id/Service_request"
+                app:layout_constraintTop_toBottomOf="@+id/Service_request" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button11"
+                android:id="@+id/govt"
                 android:layout_width="80dp"
                 android:layout_height="77dp"
                 android:layout_marginTop="84dp"
                 android:background="@drawable/newinsurance"
                 android:contentDescription="@string/desc_button"
-                app:layout_constraintEnd_toEndOf="@+id/button8"
+                app:layout_constraintEnd_toEndOf="@+id/deposit"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/button8"
-                app:layout_constraintTop_toBottomOf="@+id/button8" />
+                app:layout_constraintStart_toStartOf="@+id/deposit"
+                app:layout_constraintTop_toBottomOf="@+id/deposit" />
 
             <TextView
                 android:id="@+id/textView9"
@@ -207,22 +206,22 @@
                 android:gravity="center"
                 android:text="Govt Micro Insurance Scheme"
                 android:textColor="#FF000000"
-                app:layout_constraintEnd_toEndOf="@+id/button11"
+                app:layout_constraintEnd_toEndOf="@+id/govt"
                 app:layout_constraintHorizontal_bias="0.21"
-                app:layout_constraintStart_toStartOf="@+id/button11"
-                app:layout_constraintTop_toBottomOf="@+id/button11" />
+                app:layout_constraintStart_toStartOf="@+id/govt"
+                app:layout_constraintTop_toBottomOf="@+id/govt" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button12"
+                android:id="@+id/offers"
                 android:layout_width="80dp"
                 android:layout_height="77dp"
                 android:layout_marginTop="88dp"
                 android:background="@drawable/offers"
                 android:contentDescription="@string/desc_button"
-                app:layout_constraintEnd_toEndOf="@+id/button9"
+                app:layout_constraintEnd_toEndOf="@+id/card_service"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/button9"
-                app:layout_constraintTop_toBottomOf="@+id/button9" />
+                app:layout_constraintStart_toStartOf="@+id/card_service"
+                app:layout_constraintTop_toBottomOf="@+id/card_service" />
 
             <TextView
                 android:id="@+id/textView10"
@@ -232,35 +231,35 @@
                 android:text="   Offers"
                 android:textColor="#FF000000"
                 android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="@+id/button12"
+                app:layout_constraintEnd_toEndOf="@+id/offers"
                 app:layout_constraintHorizontal_bias="0.384"
-                app:layout_constraintStart_toStartOf="@+id/button12"
-                app:layout_constraintTop_toBottomOf="@+id/button12" />
+                app:layout_constraintStart_toStartOf="@+id/offers"
+                app:layout_constraintTop_toBottomOf="@+id/offers" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button13"
+                android:id="@+id/feedback"
                 android:layout_width="80dp"
                 android:layout_height="77dp"
                 android:layout_marginTop="88dp"
                 android:background="@drawable/feedback"
                 android:contentDescription="@string/desc_button"
-                app:layout_constraintEnd_toEndOf="@+id/button10"
+                app:layout_constraintEnd_toEndOf="@+id/Service_request"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/button10"
-                app:layout_constraintTop_toBottomOf="@+id/button10" />
+                app:layout_constraintStart_toStartOf="@+id/Service_request"
+                app:layout_constraintTop_toBottomOf="@+id/Service_request" />
 
             <TextView
                 android:id="@+id/textView11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="76dp"
+                android:layout_height="22dp"
                 android:layout_marginTop="20dp"
                 android:text="Feedback"
                 android:textColor="#FF000000"
                 android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="@+id/button13"
-                app:layout_constraintHorizontal_bias="0.769"
-                app:layout_constraintStart_toStartOf="@+id/button13"
-                app:layout_constraintTop_toBottomOf="@+id/button13" />
+                app:layout_constraintEnd_toEndOf="@+id/feedback"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/feedback"
+                app:layout_constraintTop_toBottomOf="@+id/feedback" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
