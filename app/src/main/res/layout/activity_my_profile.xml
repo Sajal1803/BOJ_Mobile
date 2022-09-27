@@ -6,17 +6,187 @@
     android:layout_height="match_parent"
     tools:context=".MyProfile">
 
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="171dp"
-        android:layout_marginTop="310dp"
-        android:layout_marginEnd="182dp"
-        android:layout_marginBottom="402dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#222123"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/profileImageId"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="TODO"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.077"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/Profileusername"
+                android:layout_width="260dp"
+                android:layout_height="42dp"
+                android:background="@color/teal_700"
+                android:fontFamily="@font/acme"
+                android:gravity="center"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.065" />
+
+            <TextView
+                android:id="@+id/profileNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:text="@string/Name"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.471"
+                app:layout_constraintStart_toStartOf="@+id/Profileusername"
+                app:layout_constraintTop_toBottomOf="@+id/Profileusername" />
+
+            <TextView
+                android:id="@+id/Profilegender"
+                android:layout_width="260dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="53dp"
+                android:background="@color/teal_700"
+                android:fontFamily="@font/acme"
+                android:gravity="center"
+                android:text="Gender"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                app:layout_constraintBottom_toTopOf="@+id/contact_details"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/profileNameTextView"
+                app:layout_constraintTop_toBottomOf="@+id/Profileusername"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="68dp"
+                android:fontFamily="@font/acme"
+                android:text="Male"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.474"
+                app:layout_constraintStart_toStartOf="@+id/Profilegender"
+                app:layout_constraintTop_toBottomOf="@+id/profileNameTextView" />
+
+            <TextView
+                android:id="@+id/contact_details"
+                android:layout_width="413dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="220dp"
+                android:background="@color/teal_700"
+                android:fontFamily="@font/aclonica"
+                android:gravity="left"
+                android:text="Contact Details"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toTopOf="@+id/copyright_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/Phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/acme"
+                android:text="Phone No.  : "
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/contact_details" />
+
+            <TextView
+                android:id="@+id/userphone_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/acme"
+                android:text="@string/phone_number"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.173"
+                app:layout_constraintStart_toEndOf="@+id/Phone"
+                app:layout_constraintTop_toBottomOf="@+id/contact_details" />
+
+            <TextView
+                android:id="@+id/profileEmailtextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:fontFamily="@font/acme"
+                android:text="Email  : "
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Phone"
+                app:layout_constraintVertical_bias="0.072" />
+
+            <TextView
+                android:id="@+id/profileEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/acme"
+                android:text="@string/email"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.162"
+                app:layout_constraintStart_toEndOf="@+id/profileEmailtextview"
+                app:layout_constraintTop_toBottomOf="@+id/userphone_no"
+                app:layout_constraintVertical_bias="0.071" />
+
+            <TextView
+                android:id="@+id/copyright_text"
+                android:layout_width="118dp"
+                android:layout_height="63dp"
+                android:fontFamily="@font/acme"
+                android:text="@string/BOJ_CopyRight"
+                android:textColor="#03A9F4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
