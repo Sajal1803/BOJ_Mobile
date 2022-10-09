@@ -83,6 +83,12 @@ public class Register extends AppCompatActivity {
                     return;
                 }
 
+                if(!checkPasswordStrength(password))
+                {
+                    mPassword.setError("Password Must contain at least one Lowercase, Uppercase and digit ");
+                    return;
+                }
+
                 progressBar.setVisibility(View.VISIBLE);
 
                 // register the user in firebase
@@ -143,6 +149,24 @@ public class Register extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),Login.class));
             }
         });
+    }
+    public boolean checkPasswordStrength(String Password)
+    {
+        boolean hasLower=false;
+        boolean hasUpper=false;
+        boolean hasDigit=false;
+        for(char j: Password.toCharArray()) {
+            if (Character.isLowerCase(j)) {
+                hasLower=(true);
+            }
+            if (Character.isUpperCase(j)) {
+                hasUpper = true;
+            }
+            if (Character.isDigit(j)) {
+                hasDigit = true;
+            }
+        }
+        return hasLower&& hasUpper && hasDigit;
     }
 }
 
